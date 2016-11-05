@@ -1,5 +1,4 @@
-
-  var middleware = {
+var middleware = {
       requireAuthentication: function(req, res, next){
           console.log('private route hit!');
           next();
@@ -8,7 +7,6 @@
         console.log(req.method+ ' ' + req.originalUrl + ' ' + new Date().toString());
         next();
       }
-  };
-
+};
 
 module.exports = middleware;
